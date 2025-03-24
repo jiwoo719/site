@@ -1,83 +1,114 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
 *{
     margin: 0;
     padding: 0;
 }
-.container{
-    width: 1140px;
-    margin: auto;
-}
-.container h3{
+.f-h100{
+    width: 100%;
 
 }
-.column-8{
-    width: 752px;
-    height: 224px;
+.title{
+    margin-top: 50px;
 }
-.column-4{
-    width: 368px;
-    height: 224px;
+.title p{
+    width: 70px;
+    height: 35px;
+    font-size: 18px;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    border-bottom: 4px solid #111;
+    margin-top: 50px;
 }
-.column-8 ul{
+.title h2{
+    font-size: 44px;
+    text-align: right;
+}
+.title b{
+    font-weight: 800;
+}
+.w-50{
+    width: 50%;
+    height: 458px;
+}
+.d-flex{
     display: flex;
+}
+.gap{
+    gap: 0 10px;
+}
+.title{
     justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
 }
-.column-8 li{
-    width: 173px;
-    height: 224px;
-    background-color: #ebf3ff;
-    list-style: none;
-    text-align: center;
+.w-100{
+    width: 100%;
+}
+.bg1{
+    background: url('../images/bg1.jpg') no-repeat;
+    background-size: cover;
     border-radius: 10px;
 }
-.img{
-    width: 64px;
-    height: 64px;
-    margin-top: 28px;
-}
-.content-title{
-    text-align: center;
-}
-.content-title h2{
-    margin-top: 12px;
-}
-.content-title p{
-    margin-top: 12px;
-}
-.flex{
-    display: flex;
-    align-items: center;
-    justify-content: space-between
-}
-.box{
-    width: 368px;
-    height: 224px;
+.bg2{
+    background: url('../images/bg2.jpg') no-repeat;
+    background-size: cover;
     border-radius: 10px;
-    background: #ccc;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
-.box>ul{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.bg3{
+    background: url('../images/bg3.jpg') no-repeat;
+    background-size: cover;
+    border-radius: 10px;
 }
-.box li{
-    list-style: none;
-    text-align: left;
+.box h4{
+    position: relative;
+    font-size: 40px;
+    color: #fff;
+    font-weight: 600;
 }
-.box p h3{
-    padding-right: 20px;
-}
-.box img{
-    width: 100px;
-}
-.box span{
-    background-color: #fff;
-    width: 304px;
-    height: 50px;
-    text-align: center;
-    padding-top: 15px;
-    margin: auto;
+.box p{
+    position: relative;
     font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+}
+.bg1 h4{
+    margin: 100px 50px 25px;
+}
+.bg1 p{
+    margin-left: 50px;
+    line-height: 140%;
+}
+.bg2 h4{
+    margin: 100px 50px 25px;
+}
+.bg2 p{
+    margin-left: 50px;
+    line-height: 140%;
+}
+.bg3 h4{
+    margin: 100px 50px 25px;
+}
+.bg3 p{
+    margin-left: 50px;
+    line-height: 140%;
+}
+
+
+@media(max-width:768px){
+.d-flex{
+    flex-direction: column;
+}
+.w-50{
+    width: 100%;
+}
+.gap{
+    gap: 10px 0;
+}
 }
